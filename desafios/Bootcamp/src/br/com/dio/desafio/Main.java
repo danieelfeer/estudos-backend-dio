@@ -1,6 +1,8 @@
 package br.com.dio.desafio;
 
+import br.com.dio.desafio.domain.Bootcamp;
 import br.com.dio.desafio.domain.Curso;
+import br.com.dio.desafio.domain.Dev;
 import br.com.dio.desafio.domain.Mentoria;
 
 import java.time.LocalDate;
@@ -28,6 +30,30 @@ public class Main {
         System.out.println(curso1);
         System.out.println(curso2);
         System.out.println(mentoria);
+
+        Bootcamp bootcampJava = new Bootcamp();
+        bootcampJava.setNome("Bootcamp Java");
+        bootcampJava.setDescricao("Descrição Bootcamp Java");
+        bootcampJava.getConteudos().add(curso1);
+        bootcampJava.getConteudos().add(curso2);
+        bootcampJava.getConteudos().add(mentoria);
+
+        Dev devDaniel = new Dev();
+        devDaniel.setNome("Daniel");
+        devDaniel.inscreverBootcamp(bootcampJava);
+        System.out.println("Conteúdos BootCamp: " + devDaniel.getConteudosInscritos());
+        devDaniel.progredir();
+        devDaniel.progredir();
+        System.out.println("Conteúdos BootCamp: " + devDaniel.getConteudosInscritos());
+        System.out.println("XP: "+ devDaniel.calcularXp());
+
+        Dev devMaria = new Dev();
+        devMaria.setNome("Maria");
+        devMaria.inscreverBootcamp(bootcampJava);
+        System.out.println("Conteúdos BootCamp: " + devMaria.getConteudosInscritos());
+        devMaria.progredir();
+        System.out.println("Conteúdos BootCamp: " + devMaria.getConteudosInscritos());
+        System.out.println("XP: "+ devMaria.calcularXp());
 
     }
 }
