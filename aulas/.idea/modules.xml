@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/aulas.iml" filepath="$PROJECT_DIR$/aulas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/collections/collections.iml" filepath="$PROJECT_DIR$/collections/collections.iml" />
+      <module fileurl="file://$PROJECT_DIR$/desafios-algoritimo/desafios-algoritimo.iml" filepath="$PROJECT_DIR$/desafios-algoritimo/desafios-algoritimo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/collections/set/set.iml" filepath="$PROJECT_DIR$/collections/set/set.iml" />
+    </modules>
+  </component>
+</project>
